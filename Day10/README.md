@@ -171,7 +171,7 @@ db.students.insertMany(<br>
 ![28-1.png](./Outputs/28-1.png)
 ![28-2.png](./Outputs/28-2.png)
 
-## $${\color{red} Image 29: Project \space without \space _id}$$ <br>
+## $${\color{red} Image 29: Project \space without \space id}$$ <br>
 ### Set projection → {name:1, age:1, _id:0} → Hide _id field.<br>
 {name:1, age:1, _id:0}
 ![29.png](./Outputs/29.png)
@@ -321,7 +321,7 @@ db.students.find().sort({ gpa: 1 })
 ## $${\color{red} Image 56: Find \space All \space Students}$$ <br>
 ### Find all students → No limit or skip applied → Display all documents.<br>
 {name: 1 , regno: 1 , _id: 0}<br>
-{gpa: 1}
+{name: 1}
 ![56.png](./Outputs/56.png)
 
 ## $${\color{red} Image 57: Find \space Limited \space Students}$$ <br>
