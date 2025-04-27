@@ -257,7 +257,7 @@ db.students.find({ age: { $eq: 23 } })
 ## $${\color{red} Image 45: Shell \space Find \space "JS" \space Skill}$$ <br>
 ### Shell command → Find students with "JS" skill.<br>
 db.students.find({ skills: "JS" })
-![45-1.png](./Outputs/451.png)
+![45-1.png](./Outputs/45-1.png)
 ![45-2.png](./Outputs/45-2.png)
 
 ## $${\color{red} Image 46: Find \space Students \space Skilled \space in \space "C"}$$ <br>
