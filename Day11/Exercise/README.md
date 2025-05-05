@@ -1,1 +1,4 @@
+| Code Files | Outputs |
+|------------|---------|
+|['Answer.txt'](./Codes/Answer.txt)|![1.png](./Outputs/1.png)![2-1.png](./Outputs/2-1.png)![2-2.png](./Outputs/2-2.png)![3-1.png](./Outputs/3-1.png)![3-2.png](./Outputs/3-2.png)![4-1.png](./Outputs/4-1.png)![4-2.png](./Outputs/4-2.png)![4-3.png](./Outputs/4-3.png)![5.png](./Outputs/5.png)![6-1.png](./Outputs/6-1.png)![6-2.png](./Outputs/6-2.png)![6-3.png](./Outputs/6-3.png)![7.png](./Outputs/7.png)![8.png](./Outputs/8.png)![9.png](./Outputs/9.png)![10.png](./Outputs/10.png)![11.png](./Outputs/11.png)![12.png](./Outputs/12.png)![13-1.png](./Outputs/13-1.png)![13-2.png](./Outputs/13-2.png)![13-3.png](./Outputs/13-3.png)![14-1.png](./Outputs/14-1.png)![14-2.png](./Outputs/14-2.png)![14-3.png](./Outputs/14-3.png)![15.png](./Outputs/15.png)![16.png](./Outputs/16.png)|
 
