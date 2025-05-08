@@ -108,6 +108,7 @@ db.books.find()
 ![3-1.png](./Outputs/3-1.png)
 ![3-2.png](./Outputs/3-2.png)
 ![3-3.png](./Outputs/3-3.png)
+
 ---
 
 ## 📘 4. Find Books Published After 1950
@@ -116,6 +117,7 @@ db.books.find()
 db.books.find({ year_published: { $gt: 1950 } })
 ```
 ![4.png](./Outputs/4.png)
+
 ---
 
 ## 🔎 5. Find a Book by Title
@@ -124,6 +126,7 @@ db.books.find({ year_published: { $gt: 1950 } })
 db.books.findOne({ title: "The Hobbit" })
 ```
 ![5.png](./Outputs/5.png)
+
 ---
 
 ## 🔧 6. Update Year Published 
@@ -138,6 +141,7 @@ db.books.updateOne(
 ![6-1.png](./Outputs/6-1.png)
 ![6-2.png](./Outputs/6-2.png) <br><br>
 ![6-3.png](./Outputs/6-3.png)
+
 ---
 
 ## 🔧 7. Set Available to False for "Moby-Dick"
@@ -151,6 +155,7 @@ db.books.updateOne(
 ![7-1.png](./Outputs/7-1.png)
 ![7-2.png](./Outputs/7-2.png) <br><br>
 ![7-3.png](./Outputs/7-3.png)
+
 ---
 
 ## 🔄 8. Add Field `checked_out: false` to Available Books
