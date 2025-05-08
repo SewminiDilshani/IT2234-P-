@@ -14,6 +14,7 @@ use Library
 db.createCollection("books")
 ```
 ![1.png](./Outputs/1.png)
+
 ---
 
 ## 📥 2. Insert Sample Data
@@ -208,7 +209,7 @@ db.books.deleteOne({ title: "The Odyssey" })
 db.books.deleteMany({ year_published: { $lt: 1930 } })
 ```
 ![11-1.png](./Outputs/11-1.png)
-![11-2.png](./Outputs/11-2.png) |
+![11-2.png](./Outputs/11-2.png)
 
 ---
 
