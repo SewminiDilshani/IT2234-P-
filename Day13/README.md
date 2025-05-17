@@ -42,7 +42,41 @@ npm install mongoose
 ```
 ![1-1.png](./Outputs/1-1.png)<br>![1-2.png](./Outputs/1-2.png)<br>![1-3.png](./Outputs/1-3.png)
 --
+## 📄 File Descriptions
 
+### `index.js`
+
+- Initializes the Express app.
+- Connects to MongoDB at `mongodb://localhost:27017/studentInfoDB`.
+- Uses JSON middleware.
+- Imports course routes from `Course.js`.
+- Listens on port `3004`.
+
+### `Course.js`
+
+- Defines a Mongoose schema for a `Course` with fields:
+  - `code`: String
+  - `name`: String
+  - `credits`: Number
+  - `description`: String
+- Creates a `Course` model named `courses`.
+- Saves a sample course (`webservice`) to the database.
+- Exports the model.
+
+---
+![6-1.png](./Outputs/6-1.png)<br>![6-2.png](./Outputs/6-2.png)<br>![3-1.png](./Outputs/3-1.png)<br>![3-2.png](./Outputs/3-2.png)<br>![3-3.png](./Outputs/3-3.png)
+--
+
+## 📫 Sample Course Data
+
+```json
+{
+  "code": "IT2234",
+  "name": "Practical for WebService",
+  "credits": 3,
+  "description": "Build a REST API with NodeJS technology"
+}
+```
 ### 1. **GET /** – Fetch All Courses
 - **Description**: Retrieves all courses from the database.
 - **Response**: Returns an array of course objects or a 404 message if none found.
@@ -53,7 +87,6 @@ GET http://localhost:3000/api/courses
 ```
 ![5-1.png](./Outputs/5-1.png)<br>![4-1.png](./Outputs/4-1.png)<br>![4-2.png](./Outputs/4-2.png)
 --
-```
 
 ### 2. **GET /:id** – Fetch Course by ID
 - **Description**: Retrieves a single course using its MongoDB `_id`.
@@ -65,7 +98,6 @@ GET http://localhost:3000/api/courses/648a1234567890abcd123456
 ```
 ![5-2.png](./Outputs/5-2.png)<br>![4-3.png](./Outputs/4-3.png)
 --
-```
 
 ### 3. **GET /code/:cid** – Fetch Course by Code
 - **Description**: Retrieves all courses matching a specific course `code` (e.g., CS101).
