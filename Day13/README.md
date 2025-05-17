@@ -83,7 +83,7 @@ npm install mongoose
 
 ```bash
 📫 Postman Example
-GET http://localhost:3000/api/courses
+GET localhost:3001/course
 ```
 ![5-1.png](./Outputs/5-1.png)<br>![4-1.png](./Outputs/4-1.png)<br>![4-2.png](./Outputs/4-2.png)
 --
@@ -94,7 +94,7 @@ GET http://localhost:3000/api/courses
 
 ```bash
 📫 Postman Example
-GET http://localhost:3000/api/courses/648a1234567890abcd123456
+GET localhost:3004/course/648a1234567890abcd123456
 ```
 ![5-2.png](./Outputs/5-2.png)<br>![4-3.png](./Outputs/4-3.png)
 --
@@ -105,7 +105,7 @@ GET http://localhost:3000/api/courses/648a1234567890abcd123456
 
 ```bash
 📫 Postman Example
-GET http://localhost:3000/api/courses/648a1234567890abcd123456
+GET localhost:3004/course/code/IT2212
 ```
 ![5-3.png](./Outputs/5-3.png)<br>![4-4.png](./Outputs/4-4.png)
 --
