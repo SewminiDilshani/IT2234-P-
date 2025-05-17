@@ -94,7 +94,7 @@ GET localhost:3001/course
 
 ```bash
 📫 Postman Example
-GET localhost:3004/course/648a1234567890abcd123456
+GET localhost:3004/course/68285e8b5fd53dccdcf87b0f
 ```
 ![5-2.png](./Outputs/5-2.png)<br>![4-3.png](./Outputs/4-3.png)
 --
@@ -109,5 +109,4 @@ GET localhost:3004/course/code/IT2212
 ```
 ![5-3.png](./Outputs/5-3.png)<br>![4-4.png](./Outputs/4-4.png)
 --
-```
 
