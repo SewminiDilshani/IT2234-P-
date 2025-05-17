@@ -64,7 +64,7 @@ npm install mongoose
 - Exports the model.
 
 ---
-![6-1.png](./Outputs/6-1.png)<br>![6-2.png](./Outputs/6-2.png)<br>![3-1.png](./Outputs/3-1.png)<br>![3-2.png](./Outputs/3-2.png)<br>![3-3.png](./Outputs/3-3.png)
+![6-1.png](./Outputs/6-1.png)<br>![6-2.png](./Outputs/6-2.png)<br>![3-4.png](./Outputs/3-4.png)<br>![3-1.png](./Outputs/3-1.png)<br>![3-2.png](./Outputs/3-2.png)<br>![3-3.png](./Outputs/3-3.png)
 --
 
 ## 📫 Sample Course Data
