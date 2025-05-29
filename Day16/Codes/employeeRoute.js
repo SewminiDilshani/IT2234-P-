@@ -52,4 +52,23 @@ router.get('/emp',async (req,res)=>{
 }) 
 
 
+//Project count of each employee
+router.get('/with/projectcount', async (req, res) => {
+    try {
+        const results = await Employee.find()
+        const newResults = results.map(emp=>({
+            id:emp._id,
+            name:emp.name,
+            number_of_project:emp.current_projects.length
+        }))
+        if (results) {
+            res.status(200).json(newResults)
+        } else {
+            res.status(404).send("Sorry, No Data Found!")
+        }
+    } catch (error) {
+        console.error(error)
+        res.status(500).send("Server Error!")
+    }
+})
 module.exports=router
