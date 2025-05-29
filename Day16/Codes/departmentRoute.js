@@ -99,4 +99,59 @@ router.get('/with/count', async (req, res) => {
     }
 })
 
+//Display only emp id,name,department name
+router.get('/emp/:did', async (req, res) => {
+    try {
+        const did = req.params.did
+        const results = await Employee.find(
+            { departmentId: did },
+            { name: 1, departmentId: 1 }
+        ).populate("departmentId").sort({name:-1})
+//manipulate the results
+const filterResult=results.map(emp=>({
+    employee_id:emp._id,
+    employee_name:emp.name,
+    department_name:emp.departmentId.name
+}))
+        if (results) {
+            res.status(200).json(filterResult)
+        } else {
+            res.status(404).send("Sorry, No Data Found!")
+        }
+    } catch (error) {
+        console.error(error)
+        res.status(500).send("Server Error!")
+    }
+})
+
+//Find how many employees are working in a department
+//Shows the employee count along with each department
+router.get('/with/empcount', async (req, res) => {
+    try {
+        const results = await Department.aggregate([
+            {
+                $lookup: {
+                    from: 'employees',
+                    localField: '_id',
+                    foreignField: 'departmentId',
+                    as: 'employees'
+                }
+            },
+            {
+                $project: {
+                    name:1,
+                    number_of_employees:{$size:"$employees"} 
+                }
+            }
+        ])
+        if (results) {
+            res.status(200).json(results)
+        } else {
+            res.status(404).send("Sorry, No Data Found!")
+        }
+    } catch (error) {
+        console.error(error)
+        res.status(500).send("Server Error!")
+    }
+})
 module.exports = router
