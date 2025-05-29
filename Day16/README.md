@@ -41,3 +41,24 @@ This README guides you through inserting data, creating relationships, and acces
 ![1-9.png](./Outputs/1-9.png)
 ---
 
+## 6️⃣ 🧑‍💼📋👨‍🔧 Get Employees by Department ID
+✅ Returns a list of employees filtered by department ID, showing only:<br>
+ Employee ID<br>
+ Employee Name<br>
+ Department Name<br>
+📌 Sorted in descending order by employee name.
+
+![1.png](./Outputs/1.png)
+---
+
+## 7️⃣ 🏢🔢 Count Employees in Each Department
+✅ Aggregates all departments and counts how many employees belong to each.
+
+![2.png](./Outputs/2.png)
+---
+
+## 8️⃣ 🧑‍💼📈 Count Projects per Employee
+✅ Returns a list of employees along with the number of current projects they are working on.
+
+![3.png](./Outputs/3.png)
+---
